@@ -15,7 +15,7 @@ function Slide(props) {
 		return (
 			<div ref = {slide} className = {styles.slide}>
 				<div className = {styles.imageContainer}>
-					<img src = "/images/sails.jpg" alt = "sails" />
+					<img src = "/images/sails.png" alt = "sails" />
 				</div>
 				<div className = {styles.content}>
 					<h1>Heading 2</h1>
