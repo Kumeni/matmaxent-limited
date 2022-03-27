@@ -7,7 +7,10 @@ function ProjectSingle() {
     <div className = {styles.container}>
         <h3>Project title: Title</h3>
         <p>Date: Jan 01, 0001</p>
-        <Slides data = {{images:[]}}/>
+        <Slides 
+          data = {{images:[]}}
+          imageType={"MULTIPLE"}
+        />
     </div>
   )
 }

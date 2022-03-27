@@ -19,7 +19,7 @@ function Service(props) {
 				</Link>
 			</div>
 			<div className = {styles.imagesF}>
-				<Slides data = {{images:[]}} />
+				<Slides imageType={"SINGLE"} data = {{images:[]}} />
 			</div>
 		</div>
 	)

@@ -4,13 +4,36 @@
 }
 
 .backdrop{
-    width:80%;
+    max-width:1200px;
     height:450px;
     border:1px solid black;
     margin:0rem auto 2rem auto;
     background-color:blueviolet;
 }
 
+@media (max-width:1205px){
+    .backdrop{
+        width:96%;
+    }
+}
+
+@media (min-width:424px) and (max-width:598px){
+    .backdrop{
+        height:350px;
+    }
+}
+
+@media (min-width:374px) and (max-width:424px){
+    .backdrop{
+        height:300px;
+    }
+}
+
+@media (max-width:374px){
+    .backdrop{
+        height:250px;
+    }
+}
 .main > section{
     width:70%;
     margin:2rem auto;

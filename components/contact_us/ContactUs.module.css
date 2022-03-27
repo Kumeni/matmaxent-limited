@@ -16,3 +16,17 @@
     margin:2rem auto 2rem auto;
     /* border:1px solid black; */
 }
+
+@media (max-width:1200px){
+    .main{
+        width:100%;
+    }
+}
+
+@media (max-width:1000px){
+    .contact{
+        grid-template-columns:auto;
+        grid-template-rows:auto auto;
+        max-width:700px;
+    }
+}
