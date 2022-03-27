@@ -1,0 +1,32 @@
+.container{
+    border:1px solid rgb(210, 210, 210);
+    border-radius:5px;
+    padding:2rem;
+}
+
+@media (min-width:1162px) and (max-width:1329px){
+    .container{
+        padding:2rem 1rem;
+    }
+}
+
+@media (min-width:424px) and (max-width:1162px){
+    .container{
+        border:none;
+        padding: 0rem 1rem
+    }
+}
+
+@media (max-width:424px){
+    .container{
+        padding:1rem 0rem;
+        border:none;
+    }
+}
+
+@media (min-width:425px) and (max-width:768px){
+    .container h2{
+        font-size:1.9rem;
+        margin:1rem auto 2rem auto;
+    }
+}

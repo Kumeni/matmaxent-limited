@@ -1,0 +1,18 @@
+.container{
+    display:inline-block;
+}
+.menu{
+    padding:0.5rem 1rem;
+    font-weight:500;
+    display:grid;
+    display:-ms-grid;
+    display:-moz-grid;
+    grid-template-columns:max-content max-content;
+    align-content:center;
+}
+
+.menu img{
+    height:30px;
+    width:30px;
+    margin-right:0.5rem;
+}

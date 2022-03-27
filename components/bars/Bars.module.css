@@ -1,0 +1,19 @@
+.menu_bars{
+    width:25px;
+    height:25px;
+}
+
+.menu_bars > div {
+    background-color:black;
+    height:2px;
+    margin:5px 0px;
+    transition: width 0.2s;
+}
+
+.menu_bars > div:nth-of-type(2){
+    width:50%;
+}
+
+.menu_bars > div:last-of-type{
+    width:25%;
+}

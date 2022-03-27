@@ -1,0 +1,47 @@
+.main h1{
+    text-align:center;
+    margin-top:1rem;
+    margin:1rem auto 1rem auto;
+}
+
+@media (min-width:425px) and (max-width:768px){
+    .main h1{
+        font-size:2.0rem;
+        margin:1rem auto 2rem auto;
+    }
+}
+@media (max-width:425px){
+    .main h1{
+        font-size:1.6rem;
+        margin:0rem auto 1rem auto;
+    }
+}
+
+.main{
+    width:85%;
+    margin:auto;
+}
+
+@media (min-width:1252px) and (max-width:1288px){
+    .main{
+        width:90%;
+    }
+}
+
+@media (min-width:1162px) and (max-width:1252px){
+    .main{
+        width:95%;
+    }
+}
+
+@media (max-width:1162px){
+    .main{
+        width:100%;
+    }
+}
+
+@media (max-width:425px){
+    .main{
+        padding:0.5rem;
+    }
+}

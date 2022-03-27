@@ -1,0 +1,19 @@
+.body h1, .body h2{
+    text-align:center;
+    margin:1rem auto;
+}
+
+.content{
+    max-width:1200px;
+    margin:auto;
+}
+
+.content p{
+    max-width:1000px;
+    margin:auto;
+}
+
+.content ol, .content ul, .content > div{
+    max-width:900px;
+    margin:auto;
+}

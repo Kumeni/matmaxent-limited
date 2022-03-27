@@ -1,0 +1,38 @@
+.container{
+    position:absolute;
+    border:10px;
+    top:0;
+    width:100vw;
+    border:1px solid white;
+    z-index:3;
+    min-height:100vh;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding:2rem;
+    margin-left:-1000vw;
+    display:none;
+    transition:background-color 0.5s;
+    transition:margin-left 0.5s;
+}
+
+.container a{
+    display:block;
+}
+
+.container > ul{
+    list-style:none;
+}
+
+.container > ul > a, .container > ul > li{
+    padding:0.5rem 0rem;
+    font-weight:500;
+}
+
+.ourServices > a{
+    margin-left:2rem;
+}
+
+@media (max-width:756px){
+    .container{
+        display:block;
+    }
+}

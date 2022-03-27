@@ -1,0 +1,18 @@
+.main{
+    max-width:1200px;
+    margin: 1rem auto 2rem auto;
+}
+
+.main h1{
+    text-align:center;
+}
+
+.contact{
+    display:grid;
+    display:-ms-grid;
+    display:-moz-grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows:auto;
+    margin:2rem auto 2rem auto;
+    /* border:1px solid black; */
+}

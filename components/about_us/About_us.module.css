@@ -1,0 +1,32 @@
+.main > h1{
+    text-align:center;
+    margin:1rem auto;
+}
+
+.backdrop{
+    width:80%;
+    height:450px;
+    border:1px solid black;
+    margin:0rem auto 2rem auto;
+    background-color:blueviolet;
+}
+
+.main > section{
+    width:70%;
+    margin:2rem auto;
+    text-align:center;
+}
+
+.main > section > h2{
+    margin-bottom:1rem;
+}
+
+.main > section > ol{
+    text-align:center;
+    width:max-content;
+    margin: 2rem auto 2rem auto;
+}
+
+.main > section > ol > li{
+    width:max-content;
+}
