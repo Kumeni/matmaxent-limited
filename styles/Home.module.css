@@ -65,3 +65,9 @@
         width:100%;
     }
 }
+
+.introduction h2{
+    max-width:900px;
+    margin:4rem auto 3rem auto;
+    text-align:center
+}

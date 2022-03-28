@@ -57,7 +57,7 @@ function Slides(props) {
 			onSwiper={(swiper) => console.log(swiper)}
 			//onSlideChange={() => console.log('slide change')}
 			autoplay={{
-				"delay":6000,
+				"delay":10000,
 				disableOnInteraction:false,
 				waitForTransition:true
 			}}

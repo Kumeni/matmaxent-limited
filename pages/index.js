@@ -55,6 +55,19 @@ export default function Home(props) {
 				<section ref = {landing} className={styles.landing}>
 					<Slides data = {{images:[], content:{}, height:height}}/>
 				</section>
+				<section className = {styles.introduction}>
+					<h2>
+						We install shades that not only provide protection from harsh weather and Ultra violent
+						rays but are also visually appealing.
+					</h2>
+					<p>We archieve this through:</p>
+					<ul>
+						<li>Car shades</li>
+						<li>Garden Umbrellas</li>
+						<li>Tents</li>
+						<li>Canopies</li>
+					</ul>
+				</section>
 				<section className = {styles.ourServices}>
 					<h1>Our services</h1>
 					<div>
