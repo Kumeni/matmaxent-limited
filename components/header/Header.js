@@ -16,7 +16,7 @@ function Header(props) {
                         props.header.current.style.backgroundColor = "#ee954df6";
                         props.menu_info.current.style.backgroundColor = "#ee954df6";
                     } else {
-                        props.header.current.style.borderBottomColor = "rgba(210, 210, 210, 0)";
+                        props.header.current.style.borderBottomColor = "rgba(210, 210, 210, 1)";
                         props.header.current.style.backgroundColor = "transparent";
                         props.menu_info.current.style.backgroundColor = "rgba(255, 255, 255, 0.9)";
                     }
