@@ -1,14 +1,9 @@
-.body h1, .body h2{
-    text-align:center;
-    margin:1rem auto;
-}
-
 .content{
-    max-width:1200px;
+    max-width:1250px;
     margin:auto;
 }
 
-.content p{
+/*.content p{
     max-width:1000px;
     margin:auto;
 }
@@ -16,4 +11,121 @@
 .content ol, .content ul, .content > div{
     max-width:900px;
     margin:auto;
+} */
+
+.landing{
+    display:grid;
+    display:-ms-grid;
+    display:-moz-grid;
+    grid-template-columns:50% 50%;
+    margin: 0rem 1rem;
+}
+
+.coverImage{
+    border:1px solid rgb(210, 210, 210);
+    margin-top:6rem;
+    height:490px;
+    border-radius:7px;
+}
+
+@media (min-width:1058px) and (max-width:1153px){
+    .coverImage{
+        height:450px;
+    }
+}
+
+@media (min-width:948px) and (max-width:1058px){
+    .coverImage{
+        height:420px;
+    }
+}
+
+
+@media (min-width:905px) and (max-width:948px){
+    .coverImage{
+        height:390px;
+    }
+}
+
+@media (min-width:814px) and (max-width:905px){
+    .coverImage{
+        height:360px;
+    }
+}
+
+@media (max-width:814px){
+    .coverImage{
+        height:330px;
+    }
+}
+
+@media (max-width:756px){
+    .content{
+        padding:0rem;
+    }
+    .landing{
+        grid-template-columns:100%;
+        grid-template-rows:auto auto;
+    }
+    .coverImage{
+        height:90vw;
+        margin-top:0rem;
+        grid-area:1/1/2/2;
+    }
+    .details{
+        grid-area:2/1/3/2;
+    }
+}
+.details{
+    padding:2rem 1rem;
+}
+
+.details h1{
+    margin-bottom:1.5rem;
+}
+
+.images{
+    max-width:1100px;
+    margin:2rem auto;
+}
+
+
+.content h2{
+    text-align:center;
+    margin:1rem auto;
+}
+
+.content section{
+    margin-bottom:2rem;
+    padding:2rem 1rem;
+}
+
+.content section p{
+    max-width:900px;
+    margin:auto;
+}
+
+.content section ol{
+    text-align:center;
+    margin:auto;
+    list-style:none;
+}
+
+.content section ol li{
+    width:max-content;
+    margin:auto;
+    padding:0.5rem;
+}
+.content section ol, .content section ul{
+    padding-left:4rem;
+}
+
+.content section ul{
+    width:max-content;
+    max-width:700px;
+    margin:auto;
+}
+
+.content section ul li{
+    padding:0.5rem;
 }

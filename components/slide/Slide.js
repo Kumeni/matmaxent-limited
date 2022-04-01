@@ -15,10 +15,11 @@ function Slide(props) {
 		return (
 			<div ref = {slide} className = {styles.slide}>
 				<div className = {styles.imageContainer}>
-					<img src = "/images/landing_image1.png" alt = "sails" />
+					{/* <img src = "/images/landing_image1.png" alt = "sails" /> */}
+					<img src = "/images/landing_image1_small.png" alt = "sails" />
 				</div>
 				<div className = {styles.content}>
-					<h1>Your artificial shade provider</h1>
+					<h1>Redefining quality in tents</h1>
 					<p>
 						At Matmaxent we design, engineer, install and maintain car shades, garden umbrellas, canopies to protect
 						you or your customers from the sun's glare or rainfall while you're enjoying the environment.

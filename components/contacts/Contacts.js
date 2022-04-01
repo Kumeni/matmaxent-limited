@@ -15,13 +15,22 @@ function Contacts() {
                 </div>
             </div>
             
+            <p>P.O Box 57512 - 00200, Nairobi</p>
             <ul className = {styles.links}>
-                <li>P.O Box 57512 - 00200, Nairobi</li>
-                <li><a href="#">+254720 598 100</a>/ <a href = "#">+254723 441 681</a></li>
                 <li>
-                    <a href="#">info@matmaxent.co.ke</a> / 
-                    <a href="#">martin@matmaxent.co.ke</a> / 
-                    <a href="#">maxwel@matmaxent.co.ke</a>
+                    <span></span>
+                    <span>
+                        <a href="#">+254720 598 100</a>
+                        <a href = "#">+254723 441 681</a>
+                    </span>
+                </li>
+                <li>
+                    <span></span>
+                    <span>
+                        <a href="#">info@matmaxent.co.ke</a>
+                        <a href="#">martin@matmaxent.co.ke</a>
+                        <a href="#">maxwel@matmaxent.co.ke</a>
+                    </span>
                 </li>
             </ul>
         </div>

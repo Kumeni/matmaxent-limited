@@ -71,3 +71,23 @@
     margin:4rem auto 3rem auto;
     text-align:center
 }
+
+.introduction p, .introduction ul{
+    text-align:left;
+    width:max-content;
+    margin:auto;
+}
+
+.introduction ul{
+    /* list-style:none; */
+}
+
+.introduction > ul > a{
+    display:block;
+    margin:0.5rem auto;
+    color:blue;
+}
+
+.introduction > ul > a:hover{
+    text-decoration: underline;
+}

@@ -4,6 +4,7 @@ import Head from 'next/head';
 import Header from '../../components/header/Header';
 import styles from '../../components/ServicePage/ServicePage.module.css';
 import Footer from '../../components/footer/Footer';
+import Button from '../../components/button/Button';
 
 function Service() {
     return (
@@ -17,51 +18,81 @@ function Service() {
             <Header />
 
             <main className={styles.content}>
-                <h1>Service name</h1>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit 
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
-                    culpa qui officia deserunt mollit anim id est laborum.
-                </p>
+                <div className={styles.landing}>
+                    <div className ={styles.details}>
+                        <h1>Service name</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit 
+                            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
+                            culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                    <div className = {styles.coverImage}>
+                        <img src="" alt="" />
+                    </div>
+                </div>
+                
+                <div className={styles.images}>
+                    <Slides 
+                        data = {{images:[]}}
+                        imageType={"MULTIPLE"}
+                    />
+                </div>
 
-                <Slides />
-
-                <h2>Pricing</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                </p>
-
-                <h2>Application</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                </p>
-                <ol>
-                    <li>First reason</li>
-                    <li>First reason</li>
-                    <li>First reason</li>
-                </ol>
-
-                <h2>Why us?</h2>
-                <ul>
-                    <li>First reason bla bla bla</li>
-                    <li>First reason bla bla bla</li>
-                    <li>First reason bla bla bla</li>
-                    <li>First reason bla bla bla</li>
-                    <li>First reason bla bla bla</li>
-                    <li>First reason bla bla bla</li>
-                </ul>
-
-                <h2>In conclusion</h2>
-                <div>
+                <section>
+                    <h2>Pricing</h2>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
                         labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
                     </p>
+                    <Button />
+                </section>
+
+                <section>
+                    <h2>Common installation areas</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                    </p>
+                    <ol>
+                        <li>First reason</li>
+                        <li>First reason reason</li>
+                        <li>First reason</li>
+                    </ol>
+                </section>
+
+                <section>
+                    <h2>Why us?</h2>
+                    <ul>
+                        <li>First reason bla bla bla</li>
+                        <li>First reason bla bla bla</li>
+                        <li>First reason bla bla bla</li>
+                        <li>First reason bla bla bla</li>
+                        <li>First reason bla bla bla</li>
+                        <li>First reason bla bla bla</li>
+                    </ul>
+                    <Button />
+                </section>
+
+                <div className={styles.images}>
+                    <Slides 
+                        data = {{images:[]}}
+                        imageType={"MULTIPLE"}
+                    />
                 </div>
+
+                <section>
+                    <h2>In conclusion</h2>
+                    <div>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                        </p>
+                    </div>
+                    <Button />
+                </section>
             </main>
             <Footer />
         </div>

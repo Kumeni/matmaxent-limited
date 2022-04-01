@@ -19,11 +19,8 @@ function Header(props) {
                         //props.header.current.style.borderBottomColor = "rgba(255, 255, 255, 0.9)";
                         props.menu_info.current.style.backgroundColor = "rgba(255, 255, 255, 0.9)";
                     } else {
-<<<<<<< HEAD
                         //props.header.current.style.borderBottomColor = "rgba(210, 210, 210, 0)";
-=======
                         props.header.current.style.borderBottomColor = "rgba(210, 210, 210, 1)";
->>>>>>> 938a4dcc03d0f7e8950e0b72714846c39b5613c9
                         props.header.current.style.backgroundColor = "transparent";
                         props.menu_info.current.style.backgroundColor = "rgba(255, 255, 255, 0.9)";
                     }
@@ -70,7 +67,7 @@ function Header(props) {
                     <Menu   
                         link={"/contact_us"}
                         menu={"Contact us"}
-                        src = {"icons/contact_us.png"}
+                        src = {"/icons/contact_us.png"}
                         alt = {"phone icon"}
                     />
                 </div>

@@ -62,10 +62,10 @@ export default function Home(props) {
 					</h2>
 					<p>We archieve this through:</p>
 					<ul>
-						<li>Car shades</li>
-						<li>Garden Umbrellas</li>
-						<li>Tents</li>
-						<li>Canopies</li>
+						<a href="#">Car shades</a>
+						<a href="#">Garden Umbrellas</a>
+						<a href="#">Tents</a>
+						<a href="#">Canopies</a>
 					</ul>
 				</section>
 				<section className = {styles.ourServices}>
