@@ -167,7 +167,7 @@
 @media (max-width:600px){
     .content{
         color:white;
-        background-image:linear-gradient(to top, black, rgba(0, 0, 0, 0) )
+        background-image:linear-gradient(to top, black, rgba(0, 0, 0, 0))
     }
 }
 
