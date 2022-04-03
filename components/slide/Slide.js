@@ -23,7 +23,7 @@ function Slide(props) {
 					<h1>Redefining quality in tents</h1>
 					<p>
 						At Matmaxent we design, engineer, install and maintain car shades, garden umbrellas, canopies to protect
-						you or your customers from the sun's glare or rainfall while you're enjoying the environment.
+						you or your customers from the sun&apos;s glare or rainfall while you&apos;re enjoying the environment.
 					</p>
 					<a href = "#">Link</a>
 				</div>

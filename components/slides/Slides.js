@@ -16,24 +16,28 @@ function Slides(props) {
 
 	//This function is responsible for determining the number of slides based on window size
 	const numberOfSlides = () => {
-		if(props.imageType === "MULTIPLE")
-			if(window.innerWidth > 1088){
-				slidesPerView !== 3 &&
-					setSlidesPerView(3);
-			} else if( window.innerWidth > 580 ){
-				slidesPerView !== 3 &&
-					setSlidesPerView(2);
+		if(props.imageType === "MULTIPLE"){
+			if(slidesPerView !== undefined){
+				if(window.innerWidth > 1088){
+					slidesPerView !== 3 &&
+						setSlidesPerView(3);
+				} else if( window.innerWidth > 580 ){
+					slidesPerView !== 3 &&
+						setSlidesPerView(2);
+				} else {
+					slidesPerView !== 3 &&
+						setSlidesPerView(1)
+				}
 			} else {
-				slidesPerView !== 3 &&
-					setSlidesPerView(1)
+				setSlidesPerView(1);
 			}
-		else {
-			setSlidesPerView(1);
 		}
+		
+		return null;
 	}
 	useEffect(()=>{
 		numberOfSlides();
-	}, [])
+	}, [props.imageType])
 
 	useEffect(()=>{
 		if(props.imageType === "MULTIPLE"){
