@@ -19,7 +19,7 @@
 
 @media (max-width:424px){
     .container{
-        padding:1rem 0rem;
+        padding:1rem 0.5rem;
         border:none;
     }
 }
@@ -28,5 +28,11 @@
     .container h2{
         font-size:1.9rem;
         margin:1rem auto 2rem auto;
+    }
+}
+
+@media (max-width:425px){
+    .container h2{
+        font-weight:400;
     }
 }

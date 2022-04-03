@@ -14,8 +14,10 @@ function Service(props) {
 				<p>
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ut eius officiis id consectetur illum, earum esse magni dolores unde omnis aperiam iusto nam accusamus qui ipsam quam distinctio! Cupiditate!
 				</p>
-				<Link href = "#">
-					Link
+				<Link href = "services/service-name">
+					<a className = {styles.link}>
+						More...
+					</a>
 				</Link>
 			</div>
 			<div className = {styles.imagesF}>

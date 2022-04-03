@@ -1,16 +1,15 @@
 .container{
     position:absolute;
-    border:10px;
     top:0;
     width:100vw;
-    border:1px solid white;
+    /* border:1px solid white; */
     z-index:3;
     min-height:100vh;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(236, 137, 56, 0.906);
     padding:2rem;
     margin-left:-1000vw;
     display:none;
-    transition:background-color 0.5s;
+    transition:background-color 1s;
     transition:margin-left 0.5s;
 }
 
@@ -25,6 +24,9 @@
 .container > ul > a, .container > ul > li{
     padding:0.5rem 0rem;
     font-weight:500;
+    font-size:1.5rem;
+    border:1px solid rgba(224, 35, 241, 0.486);
+    padding:1rem 0.8rem;
 }
 
 .ourServices > a{
@@ -35,4 +37,8 @@
     .container{
         display:block;
     }
+}
+
+.ourServices > a{
+    border-top:none;
 }

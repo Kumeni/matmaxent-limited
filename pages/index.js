@@ -47,7 +47,12 @@ export default function Home(props) {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
-			<Header menu_info = {props.menu_info} header = {header} barsContainer = {props.barsContainer} handleMenuClick = {data => props.handleMenuClick(data)}/>
+			<Header 
+				menu_info = {props.menu_info} 
+				header = {header} 
+				barsContainer = {props.barsContainer} 
+				handleMenuClick = {data => props.handleMenuClick(data)}
+			/>
 			<main ref = {props.main} className={styles.main}>
 
 				<Navigation menu_info = {props.menu_info}/>
@@ -57,8 +62,10 @@ export default function Home(props) {
 				</section>
 				<section className = {styles.introduction}>
 					<h2>
-						We install shades that not only provide protection from harsh weather and Ultra violent
-						rays but are also visually appealing.
+						<em>
+							We install shades that not only provide protection from harsh weather and Ultra violent
+							rays but are also visually appealing.
+						</em>
 					</h2>
 					<p>We archieve this through:</p>
 					<ul>

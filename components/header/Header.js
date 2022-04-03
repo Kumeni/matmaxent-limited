@@ -12,17 +12,18 @@ function Header(props) {
                 if(props.header.current != null){
                     if(window.scrollY > 5){
                         // props.header.current.style.borderBottomColor = "rgb(210, 210, 210)";
-                        //props.header.current.style.backgroundColor = "#ee954df6";
+                        props.header.current.style.backgroundColor = "#ee954df6";
                         //props.header.current.style.borderBottomColor = "#ee954df6";
                         //props.menu_info.current.style.backgroundColor = "#ee954df6";
-                        props.header.current.style.backgroundColor = "rgba(255, 255, 255, 0.9)";
+                        //props.header.current.style.backgroundColor = "rgba(255, 255, 255, 0.9)";
                         //props.header.current.style.borderBottomColor = "rgba(255, 255, 255, 0.9)";
-                        props.menu_info.current.style.backgroundColor = "rgba(255, 255, 255, 0.9)";
+                        //props.menu_info.current.style.backgroundColor = "rgba(255, 255, 255, 0.9)";
                     } else {
                         //props.header.current.style.borderBottomColor = "rgba(210, 210, 210, 0)";
-                        props.header.current.style.borderBottomColor = "rgba(210, 210, 210, 1)";
-                        props.header.current.style.backgroundColor = "transparent";
-                        props.menu_info.current.style.backgroundColor = "rgba(255, 255, 255, 0.9)";
+                        //props.header.current.style.borderBottomColor = "rgba(210, 210, 210, 1)";
+                        // props.header.current.style.backgroundColor = "transparent";
+                        props.header.current.style.backgroundColor = "#ee954df6";
+                        //props.menu_info.current.style.backgroundColor = "rgba(255, 255, 255, 0.9)";
                     }
                 }
             });

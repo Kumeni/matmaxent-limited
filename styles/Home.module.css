@@ -3,6 +3,7 @@
     margin:1rem auto 0rem auto;
     /* border:1px solid black; */
     transition:0.5s width;
+    transition:0.5s height;
     overflow-y: hidden;
 }
 @media (max-width:1200px) and (min-width:1024px){

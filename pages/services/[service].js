@@ -1,12 +1,16 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import Slides from '../../components/slides/Slides';
 import Head from 'next/head';
 import Header from '../../components/header/Header';
 import styles from '../../components/ServicePage/ServicePage.module.css';
 import Footer from '../../components/footer/Footer';
 import Button from '../../components/button/Button';
+import Navigation from '../../components/navigation/Navigation';
 
-function Service() {
+function Service(props) {
+
+    const header = useRef(null);
+
     return (
         <div className = {styles.body}>
             <Head>
@@ -15,9 +19,15 @@ function Service() {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
-            <Header />
+            <Header 
+                header = {header}
+                menu_info = {props.menu_info}
+                barsContainer = {props.barsContainer}
+                handleMenuClick = {data => props.handleMenuClick(data)}
+            />
 
-            <main className={styles.content}>
+            <main ref = {props.main} className={styles.content}>
+                <Navigation menu_info = {props.menu_info}/>
                 <div className={styles.landing}>
                     <div className ={styles.details}>
                         <h1>Service name</h1>
@@ -47,7 +57,7 @@ function Service() {
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
                         labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
                     </p>
-                    <Button />
+                    <Button type="success"/>
                 </section>
 
                 <section>
@@ -73,7 +83,7 @@ function Service() {
                         <li>First reason bla bla bla</li>
                         <li>First reason bla bla bla</li>
                     </ul>
-                    <Button />
+                    <Button type="success"/>
                 </section>
 
                 <div className={styles.images}>
@@ -91,10 +101,10 @@ function Service() {
                             labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
                         </p>
                     </div>
-                    <Button />
+                    <Button type="success"/>
                 </section>
             </main>
-            <Footer />
+            <Footer footer = {props.footer}/>
         </div>
     )
 }   

@@ -1,10 +1,14 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import Head from 'next/head';
 import Header from '../components/header/Header';
 import styles from '../components/about_us/About_us.module.css';
 import Footer from '../components/footer/Footer';
+import Navigation from '../components/navigation/Navigation';
 
-function About_us() {
+function About_us(props) {
+
+	const header = useRef(null);
+
 	return (
 		<div>
 			<Head>
@@ -13,8 +17,14 @@ function About_us() {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
-			<Header />
-			<main className = {styles.main}>
+			<Header 
+				header = {header}
+				menu_info = {props.menu_info}
+				barsContainer = {props.barsContainer}
+				handleMenuClick = {data => props.handleMenuClick(data)}
+			/>
+			<main ref = {props.main} className = {styles.main}>
+				<Navigation menu_info = {props.menu_info}/>
 				<h1>Matmax limited</h1>
 				<div className = {styles.backdrop}>
 					<img src="" alt="" />
@@ -67,7 +77,7 @@ function About_us() {
 					</ol>
 				</section>
 			</main>
-			<Footer />
+			<Footer footer = {props.footer} />
 		</div>
 	)
 }

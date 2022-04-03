@@ -17,6 +17,7 @@ function Slide(props) {
 				<div className = {styles.imageContainer}>
 					{/* <img src = "/images/landing_image1.png" alt = "sails" /> */}
 					<img src = "/images/landing_image1_small.png" alt = "sails" />
+					{/* <img src = "/icons/bbb83b55d382d3df9084fcde08176aaffe8dbfd1.jpeg" alt = "sails" /> */}
 				</div>
 				<div className = {styles.content}>
 					<h1>Redefining quality in tents</h1>

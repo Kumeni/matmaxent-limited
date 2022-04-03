@@ -1,12 +1,16 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import Head from 'next/head';
 import Header from '../components/header/Header';
 import Contacts from '../components/contacts/Contacts';
 import MessageUs from '../components/messageUs/MessageUs';
 import Footer from '../components/footer/Footer';
 import styles from '../components/contact_us/ContactUs.module.css';
+import Navigation from '../components/navigation/Navigation';
 
-function Contact_us() {
+function Contact_us(props) {
+
+	const header = useRef(null);
+
 	return (
 		<div>
 			<Head>
@@ -15,19 +19,27 @@ function Contact_us() {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
-			<Header />
+			<Header 
+				header = {header}
+				menu_info = {props.menu_info}
+				barsContainer = {props.barsContainer}
+				handleMenuClick = {data => props.handleMenuClick(data)}
+			/>
 
-			<main className = {styles.main}>
+			<main ref = {props.main} className = {styles.main}>
+				<Navigation 
+					menu_info = {props.menu_info}
+				/>
 				<h1>Contact us</h1>
 				<section className = {styles.contact}>
 					<Contacts />
 					<MessageUs />
 				</section>
 				<section className = {styles.map}>
-					Google maps to our site
+					{/* Google maps to our site */}
 				</section>
 			</main>
-			<Footer />
+			<Footer footer = {props.footer}/>
 		</div>
 	)
 }

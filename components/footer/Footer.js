@@ -7,18 +7,26 @@ function Footer(props) {
 			<div>
 				<p>Follow us on socials</p>
 				<div className = {styles.socials}>
-					<div className = {styles.social}>
-						<img src = "" alt = "" />
-					</div>
-					<div className = {styles.social}>
-						<img src = "" alt = "" />
-					</div>
-					<div className = {styles.social}>
-						<img src = "" alt = "" />
-					</div>
-					<div className = {styles.social}>
-						<img src = "" alt = "" />
-					</div>
+					<a href="#">
+						<div className = {styles.social}>
+							<img width="100%" height="100%" src = "/icons/linkedIN.png" alt = "linkedIN icon" />
+						</div>
+					</a>
+					<a href="#">
+						<div className = {styles.social}>
+							<img width="100%" height="100%" src = "/icons/twitter.png" alt = "twitter icon" />
+						</div>
+					</a>
+					<a href="#">
+						<div className = {styles.social}>
+							<img width="100%" height="100%" src = "/icons/instagram.png" alt = "instagram icon" />
+						</div>
+					</a>
+					<a href="#">
+						<div className = {styles.social}>
+							<img width="100%" height="100%" src = "/icons/facebook.png" alt = "facebook icon" />
+						</div>
+					</a>
 				</div>
 			</div>
 			<div className = {styles.navigation}>

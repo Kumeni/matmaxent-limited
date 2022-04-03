@@ -1,6 +1,8 @@
 .content{
     max-width:1250px;
     margin:auto;
+    overflow-y: hidden;
+    position:relative;
 }
 
 /*.content p{
@@ -27,6 +29,17 @@
     height:490px;
     border-radius:7px;
 }
+
+@media (max-width:757px){
+    .landing{
+        margin:0rem;
+    }
+    .coverImage{
+        border-radius:0;
+    }
+}
+
+
 
 @media (min-width:1058px) and (max-width:1153px){
     .coverImage{
@@ -82,6 +95,8 @@
 
 .details h1{
     margin-bottom:1.5rem;
+    border-left:3px solid rgba(236, 119, 9, 0.966);
+    padding-left:0.7rem;
 }
 
 .images{
@@ -89,6 +104,11 @@
     margin:2rem auto;
 }
 
+@media (max-width:757px) {
+    .images{
+        padding:0.5rem;
+    }
+}
 
 .content h2{
     text-align:center;
@@ -118,6 +138,12 @@
 }
 .content section ol, .content section ul{
     padding-left:4rem;
+}
+
+@media (max-width:757px){
+    .content section ol, .content section ul{
+        padding-left:0rem;
+    }
 }
 
 .content section ul{

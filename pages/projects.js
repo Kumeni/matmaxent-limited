@@ -1,10 +1,15 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import Head from 'next/head';
 import Header from '../components/header/Header';
 import Project from '../components/project/Project';
 import styles from '../components/project/projects.module.css';
+import Navigation from '../components/navigation/Navigation';
+import Footer from '../components/footer/Footer';
 
-function Projects() {
+function Projects(props) {
+
+	const header = useRef(null);
+
 	return (
 		<div>
 			<Head>
@@ -13,11 +18,18 @@ function Projects() {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
-			<Header />
-			<main className={styles.main}>
+			<Header 
+				header = {header}
+				menu_info = {props.menu_info}
+				barsContainer = {props.barsContainer}
+				handleMenuClick = {data => props.handleMenuClick(data)}
+			/>
+			<main ref = {props.main} className={styles.main}>
+				<Navigation menu_info = {props.menu_info}/>
 				<h1>Done projects</h1>
 				<Project />
 			</main>
+			<Footer footer = {props.footer} />
 		</div>
 	)
 }

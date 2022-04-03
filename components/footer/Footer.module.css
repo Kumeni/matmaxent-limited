@@ -19,13 +19,9 @@
 .social{
     width:35px;
     height:35px;
-    border:1px solid red;
     margin:0.5rem;
 }
 
-.social:nth-of-type(even){
-    background-color:greenyellow;
-}
 .social:hover{
     cursor:pointer;
 }

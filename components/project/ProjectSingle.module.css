@@ -28,4 +28,7 @@
     .container > div{
         margin:1rem 0rem auto 0rem;
     }
+    .container > h3{
+        font-weight:400;
+    }
 }
